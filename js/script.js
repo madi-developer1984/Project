@@ -1,22 +1,34 @@
-// Создаем переменные 
-
-var title = "Название сайта";
-var screens = 3;
-var screenPrice = 100;
-var roolback = true;
-var fullPrice = screens * screenPrice;
+// Шаг 1: Присвоение значений переменным
+var title = "Мой Проект";
+var screens = "Простые, Сложные, Интерактивные";
+var screenPrice = 1500;  // Любое число
+var rollback = 20;  // Любое число от 1 до 100
+var fullPrice = 50000;  // Любое число
 var adaptive = true;
 
-// Выводим модальное окно (Alert)
-alert("Привет! Glo-academy");
+// Шаг 2: Использование методов и свойств
+console.log("Тип данных переменной title:", typeof title);
+console.log("Тип данных переменной fullPrice:", typeof fullPrice);
+console.log("Тип данных переменной adaptive:", typeof adaptive);
 
-// Вводим сообщение в консоль
-console.log("Это сообщение в консоли. Здесь тоже можно вывести любой текст.");
+console.log("Длина строки из переменной screens:", screens.length);
 
-// Выводим сообщение в консоль
-console.log("Название сайта", title);
-console.log("Количество экранов:", screens);
-console.log("Цена одного экрана:", screenPrice);
-console.log("Имеется ли откат:", roolback);
-console.log("Общая цена:", fullPrice);
-console.log("Адаптивный ли дизайн", adaptive);
+console.log(`Стоимость верстки экранов (${screenPrice}) рублей`);
+console.log(`Стоимость разработки сайта (${fullPrice}) рублей`);
+
+var screensArray = screens.toLowerCase().split(', ');
+console.log("Массив экранов:", screensArray);
+
+console.log("Процент отката посреднику за работу:", fullPrice * (rollback / 100));
+
+// Шаг 3: Проверка
+console.log("Все проверено и работает!");
+
+// Шаг 4: Добавление второго урока в репозиторий
+// Предполагается, что у вас уже есть локальный репозиторий и связь с удаленным репозиторием
+
+// Создаем и переходим в новую ветку
+// git checkout -b lesson02 (в терминале)
+// git add script.js (в терминале)
+// git commit -m "Добавлены переменные и выполнены задачи" (в терминале)
+// git push origin lesson02 (в терминале)
